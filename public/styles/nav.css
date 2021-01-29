@@ -1,0 +1,53 @@
+nav {
+  height: 120px;
+  width: 100%;
+  background-color: #4056a1;
+  color: #FFFFFF;
+  font-family: 'Bungee', cursive;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
+  padding: 1.5em;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+div {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Bungee', cursive;
+}
+
+button {
+  background-color:#4056a1;
+  color:white;
+  
+}
+
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: #eee;
+  width: fit-content;
+  width: 600px;
+}
+
+
+@media (max-width: 1056px) {
+  nav {
+    background-color: #4056a1;
+    background-image: url(../images/arches.png);
+  }
+}
+
+
+@media (min-width: 1056px) {
+  nav span i{
+    color: #4056a1;
+  }
+}

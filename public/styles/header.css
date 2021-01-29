@@ -1,0 +1,49 @@
+#topHeader {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color:orange;
+}
+.avatar {
+  padding-top: 5em;
+}
+span {
+  display: flex;
+  flex-direction: column;
+}
+
+#arrowButton {
+  height: 20px;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+#newTweetButton {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+@media (min-width: 1056px) {
+  body > header {
+    width: 30vw;
+    float: left;
+    margin: 170px 0px 0px 50px;
+    position: fixed;
+  }
+  #topHeader {
+    width: 39%;
+  }
+  @keyframes bounce {
+    from {
+      padding: 0px;
+    }
+    to {
+      padding: 5px;
+    }
+  }
+}

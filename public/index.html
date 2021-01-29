@@ -7,23 +7,72 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
 
-    <!-- App CSS -->
+    <!-- Layout CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+
+    <!-- Nav bar CSS -->
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+
+    <!-- Header CSS -->
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+
+    <!-- New Tweet CSS -->
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+
+    <!-- All Tweets CSS -->
+    <link rel="stylesheet" href="/styles/all-tweets.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <!-- App JS -->
+    <!-- Client functions JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+
+    <!-- Character Counter JS -->
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
+    <!-- Icons link -->  
+    <script src="https://kit.fontawesome.com/d43ad7a5b6.js" crossorigin="anonymous"></script>
+    <!-- Fonts link --> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">
+    <!-- Viewport --> 
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
   </head>
 
   <body>
-    <!-- Top nav bar (fixed) -->
     <nav>
       <span>tweeter</span>
+      <div id="compose-new">
+        <span><b>Write a new tweet </b> 
+        <button id="newTweetButton" type="submit">
+          <img id="arrowButton" src="/images/arrows.png">
+        </button>
+      </span>
+      </div>
     </nav>
-
-    <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <header id="topHeader">
+      <div>
+          <img class="avatar" src="/images/profile-hex.png"> 
+      </div>  
+      <div>
+          <h2>Anto Ter-Mesropian</h2>
+      </div>
+  </header>
+  
+    <main class="container">
+    <section class="new-tweet">
+      <p></p>
+      <form action="/tweets/" method="POST">
+        <textarea id ="my-textarea" name="text" placeholder="What are you humming about?"></textarea>
+        <br></br>
+        <div>
+          <input id="tweetButton" type="submit" value="Tweet"></input>
+          <div id="my-remaining-chars" class="counter">140</div>
+        </div>
+      </form>
+    </section>  
+    <section class="all-tweets"></section>
+  </main>
   </body>
 </html>
