@@ -6,8 +6,8 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Screenshots
 
-!["Screenshot of Desktop View"](https://github.com/lighthouse-labs/tweeter/docs/desktop-view.png)
-!["Screenshot of Mobile View"](https://github.com/lighthouse-labs/tweeter/docs/mobile-view.png)
+!["Screenshot of Desktop View"](https://raw.githubusercontent.com/antotm99/tweeter/master/docs/desktop-view.png)
+!["Screenshot of Mobile View"](https://raw.githubusercontent.com/antotm99/tweeter/master/docs/mobile-view.png)
 
 
 
