@@ -105,6 +105,9 @@ $('.new-tweet form').on('submit', function(event) {
       })
     }
   })
+  
+  //When you click the arrows button ont he top left
+  //It will focus on the new-tweet textarea
 
   $('#newTweetButton').click(function() {
     $('section.new-tweet').slideToggle("slow");
